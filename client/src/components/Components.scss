@@ -1,0 +1,568 @@
+/************* Variables ***********/
+$background-color: #000;
+$border-radius: 46px;
+/*********** Header ****************/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 46px;
+  border-top-right-radius: 46px;
+  width: 100%;
+  height: auto;
+  padding: 54px 204px;
+  .header__title {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    span {
+      font-family: Mystery Quest;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 87px;
+      color: #ffffff;
+    }
+  }
+  .header__desc {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+    width: 370px;
+    margin-top: 11px;
+  }
+
+  .header__search {
+    display: flex;
+    margin-top: 40px;
+  }
+}
+
+/********** Search ******************/
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .search__input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 59px;
+    color: #291507;
+    padding: 28px;
+
+    input {
+      flex: 1;
+      width: 300px;
+    }
+
+    i {
+      cursor: pointer;
+    }
+  }
+}
+
+/************** SearchList **********/
+.search__list {
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  background: #ffffff;
+  height: 200px;
+  z-index: 1000;
+  border-radius: 24px;
+  margin-left: 200px;
+  width: 394.62px;
+  top: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+  .search__link {
+    padding: 10px;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    cursor: pointer;
+    &:nth-of-type(even) {
+      background: rgba(151, 151, 151, 0.1);
+      border-radius: 12px;
+    }
+  }
+}
+
+/************** Discover ************/
+.discover {
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 46px;
+  border-bottom-right-radius: 46px;
+  width: 100%;
+  height: auto;
+  background: #e3e1dc;
+  padding: 25px 107px 107px 145px;
+
+  h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #291507;
+  }
+  .discover__line {
+    width: 59.18px;
+    height: 3.21px;
+    background: #4d270c;
+    border-radius: 77px;
+    margin-top: 8px;
+  }
+  .discover__info {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+    h2 {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 59px;
+      color: #291507;
+      width: 536.93px;
+    }
+    .info__showmore {
+      display: flex;
+      margin-top: auto;
+      align-items: center;
+      gap: 5px;
+      color: rgba(41, 21, 7, 0.6);
+      &.info__seamore {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+      }
+    }
+  }
+  .breeds__info {
+    display: flex;
+    margin-top: 58px;
+    justify-content: space-between;
+  }
+}
+
+/************* DiscoverItems *********/
+.breedInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  img {
+    width: 220px;
+    height: 220px;
+    border-radius: 24px;
+  }
+  h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #291507;
+  }
+}
+
+/*********** CAT INFO ****************/
+.catInfo {
+  display: flex;
+  gap: 20px;
+  padding: 100px 104px;
+  .catInfo__left {
+    padding: 76px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-style: normal;
+
+    .catInfo__line {
+      width: 59.18px;
+      height: 3.21px;
+      background: #4d270c;
+      border-radius: 77px;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 59px;
+      color: #291507;
+      width: 447.74px;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #291507;
+      width: 447.74px;
+      margin-top: 43px;
+    }
+    .catInfo__showmore {
+      display: flex;
+      margin-top: auto;
+      align-items: center;
+      gap: 5px;
+      color: rgba(41, 21, 7, 0.6);
+      margin-top: 40px;
+      span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+      }
+    }
+  }
+
+  .catInfo__right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 11vw);
+    gap: 25px;
+    img:nth-child(3n - 2) {
+      width: 273.52px;
+    }
+    img:nth-child(3n - 1) {
+      width: 195.49px;
+    }
+
+    img:nth-child(3n) {
+      width: 195.49px;
+      margin-left: auto;
+    }
+  }
+}
+
+/************* Cat ******************/
+.cat {
+  display: flex;
+  gap: 46px;
+  justify-content: space-between;
+  align-items: center;
+  .cat__image {
+    display: flex;
+    width: 170px;
+    height: 170px;
+    justify-content: center;
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 24px;
+    }
+  }
+  .cat__desc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    color: #291507;
+    padding-bottom: 40px;
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+
+/*************** CatDetails ****************/
+.catDetails {
+  display: flex;
+  gap: 59px;
+  img {
+    width: 371.04px;
+    height: 371.04px;
+    border-radius: 24px;
+  }
+  .catDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    h1 {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      color: #291507;
+    }
+    h3 {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #291507;
+    }
+  }
+  .detailOption {
+    display: flex;
+    font-family: Montserrat;
+    font-style: normal;
+    color: #000000;
+    align-items: center;
+    h3 {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      width: 148px;
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 10px;
+    }
+    .detailOption__range {
+      display: flex;
+      justify-content: right;
+      gap: 10px;
+      flex: 1;
+      align-items: center;
+      span {
+        width: 60px;
+        height: 12px;
+        border-radius: 8px;
+      }
+      .range__dark {
+        background: #544439;
+      }
+      .range__light {
+        background: #e0e0e0;
+      }
+    }
+  }
+}
+
+/*************** Other Picture **************/
+.otherPictures {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  gap: 40px;
+  h6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 278px);
+    gap: 46px;
+    img {
+      width: 100%;
+      height: 278px;
+      border-radius: 24px;
+    }
+  }
+}
+
+/*********** Foooter ****************/
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $background-color;
+  margin-top: 25px;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  width: 100%;
+  height: 50px;
+  padding: 0px 108px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  bottom: 0;
+  align-items: center;
+
+  h2 {
+    font-size: 18px;
+    line-height: 22px;
+    &:before {
+      content: '©';
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 54px 104px;
+  }
+  .discover {
+    padding: 25px 57px 107px 57px;
+  }
+  .breedInfo > img {
+    width: 180px;
+    height: 180px;
+  }
+  .catInfo {
+    padding: 100px 10px;
+    .catInfo__left {
+      padding: 35px;
+      h2,
+      h3 {
+        width: 350px;
+      }
+    }
+    .catInfo__right {
+      display: grid;
+      gap: 15px;
+      img:nth-child(3n - 2) {
+        width: 203.52px;
+      }
+      img:nth-child(3n - 1) {
+        width: 150.49px;
+      }
+
+      img:nth-child(3n) {
+        width: 150.49px;
+        margin-left: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .catDetails {
+    img {
+      width: 300.04px;
+      height: 300.04px;
+      border-radius: 24px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 20px 20px;
+    .header__desc {
+      width: 250px;
+    }
+  }
+
+  .search .search__input {
+    input {
+      flex: 1;
+      width: 75px;
+      pointer-events: none;
+    }
+  }
+  .discover {
+    padding: 25px 10px 65px 10px;
+    .discover__info {
+      h2 {
+        font-size: 28px;
+        line-height: 29px;
+        width: 300.93px;
+      }
+    }
+    .breeds__info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 200px);
+      gap: 46px;
+      justify-content: center;
+    }
+  }
+
+  .catInfo {
+    padding: 20px 0px;
+    flex-direction: column;
+    .catInfo__left {
+      padding: 10px;
+      h2,
+      h3 {
+        width: 100%;
+      }
+    }
+
+    .catInfo__right {
+      display: grid;
+      grid-template-rows: repeat(3, 150px);
+      gap: 15px;
+      img:nth-child(3n - 2) {
+        width: 250.52px;
+      }
+      img:nth-child(3n - 1) {
+        width: 195.49px;
+      }
+
+      img:nth-child(3n) {
+        width: 195.49px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .cat {
+    gap: 15px;
+    align-items: center;
+    .cat__desc {
+      gap: 5px;
+      h1 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .catDetails {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .catDetail {
+      .detailOption {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  }
+  .otherPictures {
+    gap: 20px;
+    .pictures {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .footer {
+    justify-content: center;
+    h2 {
+      font-size: 12px;
+    }
+  }
+}
