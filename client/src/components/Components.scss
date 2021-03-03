@@ -481,7 +481,7 @@ $border-radius: 46px;
     padding: 25px 10px 65px 10px;
     .discover__info {
       h2 {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 29px;
         width: 300.93px;
       }
@@ -490,8 +490,19 @@ $border-radius: 46px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 200px);
-      gap: 46px;
+      gap: 25px;
       justify-content: center;
+    }
+  }
+
+  .breedInfo {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    h3 {
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 
@@ -508,24 +519,24 @@ $border-radius: 46px;
 
     .catInfo__right {
       display: grid;
-      grid-template-rows: repeat(3, 150px);
+      grid-template-rows: repeat(3, 110px);
       gap: 15px;
       img:nth-child(3n - 2) {
-        width: 250.52px;
+        width: 200.52px;
       }
       img:nth-child(3n - 1) {
-        width: 195.49px;
+        width: 140.49px;
       }
 
       img:nth-child(3n) {
-        width: 195.49px;
+        width: 140.49px;
         margin-left: auto;
       }
     }
   }
 
   .cat {
-    gap: 15px;
+    gap: 10px;
     align-items: center;
     .cat__desc {
       gap: 5px;
@@ -541,7 +552,7 @@ $border-radius: 46px;
 
   .catDetails {
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
     justify-content: center;
     align-items: center;
     .catDetail {
@@ -553,16 +564,23 @@ $border-radius: 46px;
     }
   }
   .otherPictures {
-    gap: 20px;
+    gap: 10px;
     .pictures {
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 150px);
+      img {
+        width: 150px;
+        height: 150px;
+      }
     }
   }
 
   .footer {
     justify-content: center;
+    padding: 0px 10px;
     h2 {
-      font-size: 12px;
+      font-size: 10px;
+      line-height: 15px;
     }
   }
 }
